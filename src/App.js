@@ -6,15 +6,30 @@ import ContactForm from './components/Contact';
 
 function App() {
 
-  const [currentComponent, setCurrentComponent] = useState('About');
+    const [currentPage, setCurrentPage] = useState('Portfolio');
+
+
+  function renderPage() {
+    if (currentPage === 'About') {
+      return <About></About>
+    }
+
+    if (currentPage === 'Portfolio') {
+      return <Portfolio></Portfolio>
+    }
+
+    if (currentPage === 'ContactForm') {
+      return <ContactForm></ContactForm>
+    }
+
+    // JSX
+  }
 
   return (
     <div>
-      <Nav></Nav>
+      <Nav setCurrentPage={setCurrentPage} ></Nav>
       <main>
-        <Portfolio></Portfolio>
-        <About></About>
-        <ContactForm></ContactForm>
+        { renderPage()}
       </main>
     </div>
   );

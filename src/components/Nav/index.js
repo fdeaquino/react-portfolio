@@ -1,14 +1,15 @@
-import React, { useState} from 'react';
+import React, { useState } from 'react';
 import logo from "../../assets/small/logo.png";
 
 
-function Nav() {
+function Nav(props) {
 
-    function colorChange() {
-        console.log("Nav Color Changed")
-    }
+    // function colorChange() {
+    //     setCurrentComponent('About')
+    //     console.log("Nav Color Changed")
+    // }
 
-    const [currentComponent, setCurrentComponent] = useState('About');
+    const [currentComponent, setCurrentComponent] = useState('Portfolio');
 
 
     return (
@@ -22,17 +23,35 @@ function Nav() {
                 <ul className='flex-row'>
                     <li className='mx-2'>
                         {currentComponent === 'About' ? (
-                            <a style={{color:'red'}} href='#about'>About</a>
+                            <a style={{ color: 'red' }} href='#about'>About</a>
                         ) : (
-                            <a style={{color:'green'}} href='#about' onClick={colorChange}>About</a>
+                            <a style={{ color: 'white' }} href='#about' onClick={() => {
+                                setCurrentComponent('About')
+                                props.setCurrentPage('About')
+                            }}>About</a>
                         )}
-                        
+
                     </li>
                     <li className='mx-2'>
-                        <a href='#portfolio'>Portfolio</a>
+                        {currentComponent === 'Portfolio' ? (
+                            <a style={{ color: 'red' }} href='#portfolio'>Portfolio</a>
+                        ) : (
+                            <a style={{ color: 'white' }} href='#portfolio' onClick={() => {
+                                setCurrentComponent('Portfolio')
+                                props.setCurrentPage('Portfolio')
+                            }}>Portfolio</a>
+                        )}
                     </li>
                     <li className='mx-2'>
-                        <span>Contact</span>
+                        {currentComponent === 'ContactForm' ? (
+                            <a style={{ color: 'red' }} href='#contact'>Contact</a>
+                        ) : (
+                            <a style={{ color: 'white' }} href='#contact' onClick={() => {
+                                setCurrentComponent('ContactForm')
+                                props.setCurrentPage('ContactForm')
+                            }}>Contact</a>
+                        )}
+
                     </li>
                     <li className='mx-2'>
                         <a href='#resume'>Resume</a>
