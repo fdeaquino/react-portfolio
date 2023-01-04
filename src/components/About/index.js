@@ -4,9 +4,17 @@ import fdPhoto from "../../assets/small/fd-photo.jpg";
 function About() {
     return (
         <section className='my-5'>
-            <h1 id='about'>Hi! I'm Fidel</h1>
-            <img src={fdPhoto} className="my-2" style={{ width: "30%" }} alt="Fidel" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="container justify-content-center">
+                <div class="d-flex flex-row justify-content-center">
+                    <img class="rounded-circle img-fluid border shadow-sm d-flex flex-column profilePic" src={fdPhoto} style={{ width: "30%" }} alt="Fidel" />
+                </div>
+                <div class="d-flex flex-row">
+                    <p class="fw-light d-flex flex-column aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
+            </div>
+
+            {/* <img src={fdPhoto} className="my-2" style={{ width: "30%" }} alt="Fidel" />
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
         </section>
     );
 }

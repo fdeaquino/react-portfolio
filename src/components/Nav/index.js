@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import logo from "../../assets/small/logo.png";
+// import logo from "../../assets/small/logo.png";
 
 
 function Nav(props) {
@@ -13,14 +13,52 @@ function Nav(props) {
 
 
     return (
-        <header className="flex-row px-1">
-            <h2>
-                <a href='/'>
-                    <span><img alt='logo' src={logo} style={{ width: "5%" }} /></span> Fidel Deaquino
-                </a>
-            </h2>
-            <nav>
-                <ul className='flex-row'>
+        <header>
+            <nav className='navbar navbar-light navbar-expand-md bsNav'>
+                <div className='container-fluid'>
+                    <a className='navbar-brand aBrandStyles' href='/'>
+                        Fidel Deaquino
+                    </a>
+                    <button class="navbar-toggler button-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
+                        <span class="visually-hidden"></span><span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div id="navcol-1" class="collapse navbar-collapse nav-color">
+                        <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start">
+                            <li class="nav-item nav-link nav-item-styles">
+                                {currentComponent === 'About' ? (
+                                    <a style={{ color: 'red' }} href='#about'>About</a>
+                                ) : (
+                                    <a style={{ color: 'white' }} href='#about' onClick={() => {
+                                        setCurrentComponent('About')
+                                        props.setCurrentPage('About')
+                                    }}>About</a>
+                                )}
+                            </li>
+                            <li class="nav-item nav-link nav-item-styles">
+                                {currentComponent === 'Portfolio' ? (
+                                    <a style={{ color: 'red' }} href='#portfolio'>Portfolio</a>
+                                ) : (
+                                    <a style={{ color: 'white' }} href='#portfolio' onClick={() => {
+                                        setCurrentComponent('Portfolio')
+                                        props.setCurrentPage('Portfolio')
+                                    }}>Portfolio</a>
+                                )}
+                            </li>
+                            <li class="nav-item nav-link nav-item-styles">
+                                {currentComponent === 'ContactForm' ? (
+                                    <a style={{ color: 'red' }} href='#contact'>Contact</a>
+                                ) : (
+                                    <a style={{ color: 'white' }} href='#contact' onClick={() => {
+                                        setCurrentComponent('ContactForm')
+                                        props.setCurrentPage('ContactForm')
+                                    }}>Contact</a>
+                                )}
+                            </li>
+                            <li class="nav-item nav-link nav-item-styles"><a href="Resume">Resume</a></li>
+                        </ul>
+                    </div>
+                </div>
+                {/* <ul className='flex-row'>
                     <li className='mx-2'>
                         {currentComponent === 'About' ? (
                             <a style={{ color: 'red' }} href='#about'>About</a>
@@ -56,7 +94,7 @@ function Nav(props) {
                     <li className='mx-2'>
                         <a href='#resume'>Resume</a>
                     </li>
-                </ul>
+                </ul> */}
             </nav>
         </header>
     );

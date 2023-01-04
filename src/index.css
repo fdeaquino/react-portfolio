@@ -16,10 +16,13 @@ main {
   --spacing-two: calc(1rem);
   --spacing-five: calc(2.5rem);
 
+  --font-family-montserrat: 'Montserrat', sans-serif;
+  --font-family-playfair: 'Playfair Display', serif;
 }
 
 * {
   box-sizing: border-box;
+  border: 1px blue dotted;
 }
 
 html,
@@ -34,7 +37,7 @@ body {
   line-height: 1.5;
   font-size: 18px;
   letter-spacing: .1em;
-  background: var(--dark);
+  background: rgb(151, 151, 151);
   color: var(--light);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -159,6 +162,45 @@ nav li {
   cursor: pointer;
 }
 
+.nav-color {
+  color: rgb(255,255,255);
+}
+
+.bsNav {
+  --bs-body-bg: #004644;
+  background: #004644;
+}
+
+.aBrandStyles {
+  color: rgba(255, 255, 255, 0.9)!important;
+  font-family: 'Playfair Display SC', serif;
+  font-size: 25px;
+}
+
+.button-toggler {
+  --bs-success: #198754;
+  --bs-success-rgb: 25,135,84;
+  --bs-body-bg: #004644;
+  background: #00605e;
+}
+
+.nav-item-styles {
+  color: #ffffff;
+  font-family: 'Playfair Display', serif;
+}
+
+.profilePic {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 157px; 
+  height: auto;
+}
+
+.aboutText {
+  text-align: justify;
+  font-family: 'Montserrat', sans-serif;
+}
+
 textarea {
   width: 600px;
   height: 120px;
@@ -166,12 +208,12 @@ textarea {
   padding: 5px;
 }
 
-.container {
+/* .container {
   width: 85%;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
-}
+} */
 
 .flex-row {
   display: flex;
@@ -295,16 +337,34 @@ a {
   color: var(--secondary);
 }
 
-/* .projectContainer {
+.projectContainer {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  min-width: fit-content;
+  width: 100%;
+  height: 100%;
+  flex-grow: 1;
+}
 
-} */
-
-/* .project {
+.project {
+  display: flex;
   flex-basis: calc(50% - 1em);
   min-height: 200px;
   max-height: 200px;
   align-items: flex-end;
   padding-right: 20px;
   margin: 5px;
-  border: 3px solid black;
-} */
+}
+
+#byte-farmers-market-img {
+  background-image: url("./assets/large/byte-farmers-market.png");
+  background-position: auto;
+  background-size: cover;
+}
+
+#taskmaster-pro-img {
+  background-image: url("./assets/large/taskmasterpro-updated.png");
+  background-position: auto;
+  background-size: cover;
+}

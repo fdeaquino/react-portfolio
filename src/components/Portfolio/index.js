@@ -1,39 +1,50 @@
 import React from 'react';
-import byteFM from "../../assets/large/byte-farmers-market.png";
-import pizzaHunt from "../../assets/large/pizza-hunt.png";
-import taskMaster from "../../assets/large/taskmasterpro-updated.png";
-import tempoRun from "../../assets/large/Tempo-Run-Songfinder.png";
-import weatherDash from "../../assets/large/Weather-Dashboard.png";
 
 
 function Portfolio() {
     return (
         <section>
             <h1>Portfolio</h1>
-            <div className='projectContainer'>
+            <div className='container'>
                 <div className='row'>
-                    <div className="project col">
-                        <img src={byteFM} alt="Byte Farmer's Market" style={{ width: "50%" }} />
+
+
+                    <div id='byte-farmers-market-img' className="project col-6">
+                        <a href="https://byte-farmers-market.herokuapp.com/" className='projectContainer'>
+                            
+                                Byte Farmers Market
+                            
+                        </a>
                     </div>
 
 
-                    <div className="project col">
-                        <img src={taskMaster} alt="Taskmaster Pro" style={{ width: "50%" }} />
+
+                    <div id='taskmaster-pro-img' className="project col-6">
+                        <a href='https://fdeaquino.github.io/taskmaster-pro/' className='projectContainer'>
+                            
+                                Taskmaster Pro
+                            
+                        </a>
                     </div>
 
 
-                    <div className="project col">
-                        <img src={tempoRun} alt="Tempo Run Songfinder" style={{ width: "50%" }} />
+
+                    <div id='temporun-img' className="project col-6">
+                        <p>
+                            Tempo Run
+                        </p>
                     </div>
 
 
-                    <div className="project col">
-                        <img src={pizzaHunt} alt="Pizza Recipe Social Media App" style={{ width: "50%" }} />
+                    <div id='pizzahunt-img' className="project col-6">
+                        <p>
+                            Pizza Hunt
+                        </p>
                     </div>
 
 
-                    <div className="project col">
-                        <img src={weatherDash} alt="City Weather Search" style={{ width: "50%" }} />
+                    <div id='weather-dashboard-img' className="project col-6">
+                        <p>Weather Dashboard</p>
                     </div>
                 </div>
             </div>
