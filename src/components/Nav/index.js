@@ -54,7 +54,16 @@ function Nav(props) {
                                     }}>Contact</a>
                                 )}
                             </li>
-                            <li class="nav-item nav-link nav-item-styles"><a href="Resume">Resume</a></li>
+                            <li class="nav-item nav-link nav-item-styles">
+                                {currentComponent === 'Resume' ? (
+                                    <a style={{ color: 'red' }} href='#resume'>Resume</a>
+                                ) : (
+                                    <a style={{ color: 'white' }} href='#resume' onClick={() => {
+                                        setCurrentComponent('Resume')
+                                        props.setCurrentPage('Resume')
+                                    }}>Resume</a>
+                                )}
+                                </li>
                         </ul>
                     </div>
                 </div>

@@ -240,6 +240,37 @@ nav li {
   font-family: Montserrat, sans-serif;
   width: 100%;
 }
+
+.displayFlex {
+  display: flex;
+}
+
+.resumeBtn, .footerCopyright {
+  font-family: Montserrat, sans-serif;
+}
+
+.proficienciesTitles {
+  font-family: 'Playfair Display', serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+.proficienciesLi {
+  font-family: Montserrat, sans-serif;
+  color: black;
+  display: flex;
+  justify-content: center;
+}
+
+ul {
+  padding: 0;
+}
+
+.footerIcons {
+  margin: 0px 1em 0px 1em;
+}
+
 /* end custom classes */
 
 textarea {

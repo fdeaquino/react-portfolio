@@ -38,7 +38,7 @@ function Portfolio() {
                             <img className='rounded shadow-lg img-fluid d-block w-100 fit-cover project-styles' src={pizzaHunt} alt='Pizza Hunt Project'>
                             </img>
                             <div className='py-4'>
-                                <a className='title-my-6-projects' href="https://byte-farmers-market.herokuapp.com/">There is something wrong with the title of this application</a>
+                                <a className='title-my-6-projects' href="https://fd-pizza-hunt.herokuapp.com/">Pizza Hunt</a>
                                 
                                 <p className='paragraph-my-6-projects'>
                                     Nullam id dolor id nibh ultricies vehicula ut id elit. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.

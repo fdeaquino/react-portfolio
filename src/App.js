@@ -4,6 +4,7 @@ import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
 import Footer from './components/Footer';
+import Resume from './components/Resume';
 
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
 
     if (currentPage === 'ContactForm') {
       return <ContactForm></ContactForm>
+    }
+
+    if (currentPage === 'Resume') {
+      return <Resume></Resume>
     }
 
     // JSX
