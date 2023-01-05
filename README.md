@@ -2,7 +2,7 @@
 
 ## Description
 This is a professional portfolio for prospective employers to view my work samples and to get an understanding of who I am.
-Made with Create React App
+Made with Create React App.
 
 ## Table of Contents
 
@@ -13,9 +13,9 @@ Made with Create React App
 
 ## User Story
 
-- AS AN employer looking for candidates with experience building single-page applications.
-- I WANT to view a potential employee's deployed React portfolio of work samples.
-- SO THAT I can assess whether they're a good candidate for an open position.
+- AS AN employer looking for candidates with experience building single-page applications
+- I WANT to view a potential employee's deployed React portfolio of work samples
+- SO THAT I can assess whether they're a good candidate for an open position
 
 ## Acceptance Criteria
 
