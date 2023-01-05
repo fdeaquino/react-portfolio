@@ -3,6 +3,8 @@ import About from './components/About';
 import Nav from './components/Nav';
 import Portfolio from './components/Portfolio';
 import ContactForm from './components/Contact';
+import Footer from './components/Footer';
+
 
 function App() {
 
@@ -31,6 +33,7 @@ function App() {
       <main>
         { renderPage()}
       </main>
+      <Footer></Footer>
     </div>
   );
 }
