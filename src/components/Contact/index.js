@@ -4,10 +4,35 @@ import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const [errorMessage, setErrorMessage] = useState('');
+
     const { name, email, message } = formState;
 
     function handleChange(e) {
-        setFormState({ ...formState, [e.target.name]: e.target.value })
+
+        if (e.target.name === 'email') {
+            const isValid = validateEmail(e.target.value);
+            console.log(isValid);
+            // isValid conditional statement
+            if (!isValid) {
+                setErrorMessage('Your email is invalid.');
+            } else {
+                setErrorMessage('');
+            }
+        } else {
+            if (!e.target.value.length) {
+                setErrorMessage(`Your ${e.target.name} is required.`);
+            } else {
+                setErrorMessage('');
+            }
+        }
+
+
+        if (!errorMessage) {
+            setFormState({ ...formState, [e.target.name]: e.target.value });
+        }
+
+        // console.log('errorMessage', errorMessage);
     }
 
     // console.log(formState);
@@ -32,14 +57,19 @@ function ContactForm() {
                                     </h2>
                                     <form method='post' onSubmit={handleSubmit}>
                                         <div className='mb-3'>
-                                            <input id='name-2' className='form-control form-styles' type='text' defaultValue={name} onChange={handleChange} name='name' placeholder='Name' />
+                                            <input id='name-2' className='form-control form-styles' type='text' defaultValue={name} onBlur={handleChange} name='name' placeholder='Name' />
                                         </div>
                                         <div className='mb-3'>
-                                            <input id='email-2' className='form-control form-styles' type='email' defaultValue={email} onChange={handleChange} name='email' placeholder='Email' />
+                                            <input id='email-2' className='form-control form-styles' type='email' defaultValue={email} onBlur={handleChange} name='email' placeholder='Email' />
                                         </div>
                                         <div className='mb-3'>
-                                            <textarea id='message-2' className='form-control form-styles' rows='6' defaultValue={message} onChange={handleChange} name='message' placeholder='Message' />
+                                            <textarea id='message-2' className='form-control form-styles' rows='6' defaultValue={message} onBlur={handleChange} name='message' placeholder='Message' />
                                         </div>
+                                        {errorMessage && (
+                                            <div>
+                                                <p className="error-text">{errorMessage}</p>
+                                            </div>
+                                        )}
                                         <div>
                                             <button className='btn btn-primary d-block w-100 form-styles' type='submit'>
                                                 Send

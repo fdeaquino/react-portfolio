@@ -271,6 +271,17 @@ ul {
   margin: 0px 1em 0px 1em;
 }
 
+.error-text {
+  color: var(--error);
+  font-family: Montserrat, sans-serif;
+}
+
+.nav-elements {
+  display: flex;
+  
+}
+
+
 /* end custom classes */
 
 /* textarea {

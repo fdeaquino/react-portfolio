@@ -9,7 +9,7 @@ import Resume from './components/Resume';
 
 function App() {
 
-    const [currentPage, setCurrentPage] = useState('Portfolio');
+    const [currentPage, setCurrentPage] = useState('About');
 
 
   function renderPage() {

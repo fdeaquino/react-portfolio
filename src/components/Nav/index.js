@@ -9,13 +9,13 @@ function Nav(props) {
     //     console.log("Nav Color Changed")
     // }
 
-    const [currentComponent, setCurrentComponent] = useState('Portfolio');
+    const [currentComponent, setCurrentComponent] = useState('About');
 
 
     return (
         <header>
             <nav className='navbar navbar-light navbar-expand-md bsNav'>
-                <div className='container-fluid'>
+                <div className='container-fluid nav-elements'>
                     <a className='navbar-brand aBrandStyles' href='/'>
                         Fidel Deaquino
                     </a>
@@ -26,7 +26,7 @@ function Nav(props) {
                         <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start">
                             <li class="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'About' ? (
-                                    <a style={{ color: 'red' }} href='#about'>About</a>
+                                    <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#about'>About</a></button>
                                 ) : (
                                     <a style={{ color: 'white' }} href='#about' onClick={() => {
                                         setCurrentComponent('About')
@@ -36,7 +36,7 @@ function Nav(props) {
                             </li>
                             <li class="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'Portfolio' ? (
-                                    <a style={{ color: 'red' }} href='#portfolio'>Portfolio</a>
+                                    <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#portfolio'>Portfolio</a></button>
                                 ) : (
                                     <a style={{ color: 'white' }} href='#portfolio' onClick={() => {
                                         setCurrentComponent('Portfolio')
@@ -46,7 +46,7 @@ function Nav(props) {
                             </li>
                             <li class="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'ContactForm' ? (
-                                    <a style={{ color: 'red' }} href='#contact'>Contact</a>
+                                    <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#contact'>Contact</a></button>
                                 ) : (
                                     <a style={{ color: 'white' }} href='#contact' onClick={() => {
                                         setCurrentComponent('ContactForm')
@@ -56,7 +56,7 @@ function Nav(props) {
                             </li>
                             <li class="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'Resume' ? (
-                                    <a style={{ color: 'red' }} href='#resume'>Resume</a>
+                                    <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#resume'>Resume</a></button>
                                 ) : (
                                     <a style={{ color: 'white' }} href='#resume' onClick={() => {
                                         setCurrentComponent('Resume')
