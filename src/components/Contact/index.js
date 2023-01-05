@@ -1,6 +1,24 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { validateEmail } from '../../utils/helpers';
+
 
 function ContactForm() {
+    const [formState, setFormState] = useState({ name: '', email: '', message: '' });
+    const { name, email, message } = formState;
+
+    function handleChange(e) {
+        setFormState({ ...formState, [e.target.name]: e.target.value })
+    }
+
+    // console.log(formState);
+
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(formState);
+    }
+
+
+
     return (
         <section>
             <section className='position-relative py-4 py-xl-5'>
@@ -12,15 +30,15 @@ function ContactForm() {
                                     <h2 className='text-center mb-4 h2-my-forms-title'>
                                         Get in touch with me
                                     </h2>
-                                    <form method='post'>
+                                    <form method='post' onSubmit={handleSubmit}>
                                         <div className='mb-3'>
-                                            <input id='name-2' className='form-control form-styles' type='text' name='name' placeholder='Name'/>
+                                            <input id='name-2' className='form-control form-styles' type='text' defaultValue={name} onChange={handleChange} name='name' placeholder='Name' />
                                         </div>
                                         <div className='mb-3'>
-                                            <input id='email-2' className='form-control form-styles' type='email' name='email' placeholder='Email'/>
+                                            <input id='email-2' className='form-control form-styles' type='email' defaultValue={email} onChange={handleChange} name='email' placeholder='Email' />
                                         </div>
                                         <div className='mb-3'>
-                                            <textarea id='message-2' className='form-control form-styles' rows='6' name='message' placeholder='Message'/>
+                                            <textarea id='message-2' className='form-control form-styles' rows='6' defaultValue={message} onChange={handleChange} name='message' placeholder='Message' />
                                         </div>
                                         <div>
                                             <button className='btn btn-primary d-block w-100 form-styles' type='submit'>
