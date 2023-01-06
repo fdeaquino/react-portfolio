@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/react-portfolio/static/css/main.11c18920.css",
+    "main.js": "/react-portfolio/static/js/main.6c638773.js",
+    "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
+    "static/media/byte-farmers-market.png": "/react-portfolio/static/media/byte-farmers-market.92ba39caac16c5f06633.png",
+    "static/media/runbuddy-updated.png": "/react-portfolio/static/media/runbuddy-updated.35458f7c2c2209db06f9.png",
+    "static/media/Tempo-Run-Songfinder.png": "/react-portfolio/static/media/Tempo-Run-Songfinder.de939560d78dd530134d.png",
+    "static/media/pizza-hunt.png": "/react-portfolio/static/media/pizza-hunt.8f5224737ed8b052ac5c.png",
+    "static/media/fd-photo.jpg": "/react-portfolio/static/media/fd-photo.77bdbe863f0e6cebef44.jpg",
+    "static/media/Weather-Dashboard.png": "/react-portfolio/static/media/Weather-Dashboard.21261b35dd923a118415.png",
+    "static/media/taskmasterpro-updated.png": "/react-portfolio/static/media/taskmasterpro-updated.61d5127e482e60268397.png",
+    "index.html": "/react-portfolio/index.html",
+    "main.11c18920.css.map": "/react-portfolio/static/css/main.11c18920.css.map",
+    "main.6c638773.js.map": "/react-portfolio/static/js/main.6c638773.js.map",
+    "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.11c18920.css",
+    "static/js/main.6c638773.js"
+  ]
+}
