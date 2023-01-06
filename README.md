@@ -48,8 +48,8 @@ Made with Create React App.
 
 ## Screenshot
 
-![Screenshot](screenshot.png)
+![Screenshot](./src/assets/reactprof1.png)
 
 ## Deployed Site
 
-[false link - update when deployed](google.com)
+[https://fdeaquino.github.io/react-portfolio/](https://fdeaquino.github.io/react-portfolio/)
