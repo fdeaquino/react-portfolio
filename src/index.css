@@ -163,6 +163,11 @@ nav li {
   color: rgb(255,255,255);
 } */
 
+#navcol-1 {
+  align-items: flex-end;
+  flex-direction: column;
+}
+
 /* ============ custom classes ============ */
 .bsNav {
   --bs-body-bg: #004644;

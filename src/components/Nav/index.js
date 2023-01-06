@@ -16,14 +16,14 @@ function Nav(props) {
         <header>
             <nav className='navbar navbar-light navbar-expand-md bsNav'>
                 <div className='container-fluid nav-elements'>
-                    <a className='navbar-brand aBrandStyles' href='/'>
+                    <h1 className='navbar-brand aBrandStyles'>
                         Fidel Deaquino
-                    </a>
+                    </h1>
                     <button class="navbar-toggler button-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
                         <span class="visually-hidden"></span><span class="navbar-toggler-icon"></span>
                     </button>
                     <div id="navcol-1" class="collapse navbar-collapse nav-color">
-                        <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start">
+                        <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start" id="navFlexEnd">
                             <li class="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'About' ? (
                                     <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#about'>About</a></button>
