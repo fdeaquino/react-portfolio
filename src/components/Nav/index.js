@@ -14,17 +14,69 @@ function Nav(props) {
 
     return (
         <header>
-            <nav className='navbar navbar-light navbar-expand-md bsNav'>
+            <nav class="navbar navbar-expand-lg navbar-light bsNav">
+                <a class="navbar-brand aBrandStyles" href="#">Fidel Deaquino</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse navbar-links navcol-1" id="navbarNav">
+                    <ul className="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start" id="navFlexEnd">
+                        <li className="nav-item nav-link nav-item-styles">
+                            {currentComponent === 'About' ? (
+                                <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#about'>About</a></button>
+                            ) : (
+                                <a style={{ color: 'white' }} href='#about' onClick={() => {
+                                    setCurrentComponent('About')
+                                    props.setCurrentPage('About')
+                                }}>About</a>
+                            )}
+                        </li>
+                        <li class="nav-item nav-link nav-item-styles">
+                            {currentComponent === 'Portfolio' ? (
+                                <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#portfolio'>Portfolio</a></button>
+                            ) : (
+                                <a style={{ color: 'white' }} href='#portfolio' onClick={() => {
+                                    setCurrentComponent('Portfolio')
+                                    props.setCurrentPage('Portfolio')
+                                }}>Portfolio</a>
+                            )}
+                        </li>
+                        <li class="nav-item nav-link nav-item-styles">
+                            {currentComponent === 'ContactForm' ? (
+                                <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#contact'>Contact</a></button>
+                            ) : (
+                                <a style={{ color: 'white' }} href='#contact' onClick={() => {
+                                    setCurrentComponent('ContactForm')
+                                    props.setCurrentPage('ContactForm')
+                                }}>Contact</a>
+                            )}
+                        </li>
+                        <li class="nav-item nav-link nav-item-styles">
+                            {currentComponent === 'Resume' ? (
+                                <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#resume'>Resume</a></button>
+                            ) : (
+                                <a style={{ color: 'white' }} href='#resume' onClick={() => {
+                                    setCurrentComponent('Resume')
+                                    props.setCurrentPage('Resume')
+                                }}>Resume</a>
+                            )}
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+            {/* <nav className='navbar navbar-light navbar-expand-md bsNav'>
                 <div className='container-fluid nav-elements'>
                     <h1 className='navbar-brand aBrandStyles'>
                         Fidel Deaquino
                     </h1>
-                    <button class="navbar-toggler button-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
-                        <span class="visually-hidden"></span><span class="navbar-toggler-icon"></span>
+                    <button className="navbar-toggler button-toggler" data-bs-toggle="collapse" data-bs-target="#navcol-1">
+                        <span className="visually-hidden"></span>
+                        <span className="navbar-toggler-icon"></span>
                     </button>
-                    <div id="navcol-1" class="collapse navbar-collapse nav-color">
-                        <ul class="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start" id="navFlexEnd">
-                            <li class="nav-item nav-link nav-item-styles">
+                    <div id="navcol-1" className="collapse navbar-collapse nav-color navbar-links">
+                        <ul className="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start" id="navFlexEnd">
+                            <li className="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'About' ? (
                                     <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#about'>About</a></button>
                                 ) : (
@@ -67,44 +119,7 @@ function Nav(props) {
                         </ul>
                     </div>
                 </div>
-                {/* <ul className='flex-row'>
-                    <li className='mx-2'>
-                        {currentComponent === 'About' ? (
-                            <a style={{ color: 'red' }} href='#about'>About</a>
-                        ) : (
-                            <a style={{ color: 'white' }} href='#about' onClick={() => {
-                                setCurrentComponent('About')
-                                props.setCurrentPage('About')
-                            }}>About</a>
-                        )}
-
-                    </li>
-                    <li className='mx-2'>
-                        {currentComponent === 'Portfolio' ? (
-                            <a style={{ color: 'red' }} href='#portfolio'>Portfolio</a>
-                        ) : (
-                            <a style={{ color: 'white' }} href='#portfolio' onClick={() => {
-                                setCurrentComponent('Portfolio')
-                                props.setCurrentPage('Portfolio')
-                            }}>Portfolio</a>
-                        )}
-                    </li>
-                    <li className='mx-2'>
-                        {currentComponent === 'ContactForm' ? (
-                            <a style={{ color: 'red' }} href='#contact'>Contact</a>
-                        ) : (
-                            <a style={{ color: 'white' }} href='#contact' onClick={() => {
-                                setCurrentComponent('ContactForm')
-                                props.setCurrentPage('ContactForm')
-                            }}>Contact</a>
-                        )}
-
-                    </li>
-                    <li className='mx-2'>
-                        <a href='#resume'>Resume</a>
-                    </li>
-                </ul> */}
-            </nav>
+            </nav> */}
         </header>
     );
 }

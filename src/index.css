@@ -163,7 +163,7 @@ nav li {
   color: rgb(255,255,255);
 } */
 
-#navcol-1 {
+.navcol-1 {
   align-items: flex-end;
   flex-direction: column;
 }
@@ -175,14 +175,14 @@ nav li {
 }
 
 .aBrandStyles {
-  color: rgba(255, 255, 255, 0.9)!important;
+  color: rgba(255, 255, 255, 0.9) !important;
   font-family: 'Playfair Display SC', serif;
   font-size: 25px;
 }
 
 .button-toggler {
   --bs-success: #198754;
-  --bs-success-rgb: 25,135,84;
+  --bs-success-rgb: 25, 135, 84;
   --bs-body-bg: #004644;
   background: #00605e;
 }
@@ -195,18 +195,20 @@ nav li {
 .profilePic {
   margin-top: 15px;
   margin-bottom: 15px;
-  width: 40vw; 
+  width: 40vw;
   height: auto;
 }
 
 .aboutText {
   text-align: justify;
   font-family: 'Montserrat', sans-serif;
-  color:black;
+  color: black;
 }
 
-.h2-my-projects-title, .h2-my-forms-title {
-  font-size: 1.875rem;;
+.h2-my-projects-title,
+.h2-my-forms-title {
+  font-size: 1.875rem;
+  ;
   font-family: 'Playfair Display', serif;
   color: black
 }
@@ -247,7 +249,8 @@ nav li {
   display: flex;
 }
 
-.resumeBtn, .footerCopyright {
+.resumeBtn,
+.footerCopyright {
   font-family: Montserrat, sans-serif;
 }
 
@@ -280,7 +283,7 @@ ul {
 
 .nav-elements {
   display: flex;
-  
+
 }
 
 
@@ -450,7 +453,7 @@ button {
 
 @media (max-width: 576px) {
   .profilePic {
-    width: 60vw; 
+    width: 60vw;
     height: auto;
   }
 
@@ -459,12 +462,12 @@ button {
     margin: auto;
     justify-content: center;
   }
-  
+
 }
 
 @media (min-width: 576px) {
   .profilePic {
-    width: 50vw; 
+    width: 50vw;
     height: auto;
   }
 
@@ -473,7 +476,7 @@ button {
     margin: auto;
     justify-content: center;
   }
-  
+
 }
 
 @media (min-width: 768px) {
@@ -485,18 +488,18 @@ button {
 
 @media (min-width: 992px) {
   .profilePic {
-    width: 30vw; 
+    width: 30vw;
   }
 }
 
 @media (min-width: 1200px) {
   .profilePic {
-    width: 20vw; 
+    width: 20vw;
   }
 }
 
 @media (min-width: 1200px) {
   .profilePic {
-    width: 15vw; 
+    width: 15vw;
   }
 }
