@@ -9,12 +9,9 @@ function About() {
                     <img class="rounded-circle img-fluid border shadow-sm d-flex flex-column profilePic" src={fdPhoto} alt="Fidel" />
                 </div>
                 <div class="d-flex flex-row">
-                    <p class="fw-light d-flex flex-column aboutText">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <p class="fw-light d-flex flex-column aboutText">Hi, my name is Fidel. I'm originally from Mexico, but have called Houston, Texas my home for most of my life. I am a Full-Stack Web Developer with a background in teaching and management. My background as an educator allowed me to make meaningful contributions to young minds, and through collaborating, mentoring and coaching other educators, I have developed a refined set of soft skills. I am a strong believer in the power lifelong learning and curiosity for technology, which is what led me to pursue Web Development. I recently graduated from Rice University's Full-Stack Web Development Bootcamp and have honed the skills needed to create, develop, and maintain websites from start to finish. I am passionate about promoting diversity, equity, and inclusion, and in my free time, I enjoy outdoor activities such as hiking, biking, and gardening. I look forward to connecting with you!</p>
                 </div>
             </div>
-
-            {/* <img src={fdPhoto} className="my-2" style={{ width: "30%" }} alt="Fidel" />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> */}
         </section>
     );
 }
