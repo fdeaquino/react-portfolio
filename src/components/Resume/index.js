@@ -3,10 +3,10 @@ import React from 'react';
 function Resume() {
     return (
         <section class="position-relative py-4 py-xl-5">
-            <div class="container position-relative">
+            <div class="container position-relative mb-4 mb-xl-5">
                 <div class="row d-flex justify-content-center">
                     <div class="col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center displayFlex" >
-                        <a href="https://drive.google.com/file/d/1Q54sANug5nY7TYmcoREoT0mMdBMI85UY/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1mDoAjFRtRwwcizOxzDsB3ImpHVYY-lLo/view?usp=sharing">
                             <button class="btn resumeBtn" type="button">Download Resume</button>
                         </a>
 
