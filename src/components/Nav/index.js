@@ -14,12 +14,12 @@ function Nav(props) {
 
     return (
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light bsNav">
-                <h1 class="navbar-brand aBrandStyles" href="#about">Fidel Deaquino</h1>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+            <nav className="navbar navbar-expand-lg navbar-light bsNav">
+                <h1 className="navbar-brand aBrandStyles" href="#about">Fidel Deaquino</h1>
+                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span className="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse navbar-links navcol-1" id="navbarNav">
+                <div className="collapse navbar-collapse navbar-links navcol-1" id="navbarNav">
                     <ul className="navbar-nav d-lg-flex ms-auto justify-content-lg-end align-items-lg-start" id="navFlexEnd">
                         <li className="nav-item nav-link nav-item-styles">
                             {currentComponent === 'About' ? (
@@ -31,7 +31,7 @@ function Nav(props) {
                                 }}>About</a>
                             )}
                         </li>
-                        <li class="nav-item nav-link nav-item-styles">
+                        <li className="nav-item nav-link nav-item-styles">
                             {currentComponent === 'Portfolio' ? (
                                 <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#portfolio'>Portfolio</a></button>
                             ) : (
@@ -41,7 +41,7 @@ function Nav(props) {
                                 }}>Portfolio</a>
                             )}
                         </li>
-                        <li class="nav-item nav-link nav-item-styles">
+                        <li className="nav-item nav-link nav-item-styles">
                             {currentComponent === 'ContactForm' ? (
                                 <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#contact'>Contact</a></button>
                             ) : (
@@ -51,7 +51,7 @@ function Nav(props) {
                                 }}>Contact</a>
                             )}
                         </li>
-                        <li class="nav-item nav-link nav-item-styles">
+                        <li className="nav-item nav-link nav-item-styles">
                             {currentComponent === 'Resume' ? (
                                 <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#resume'>Resume</a></button>
                             ) : (
@@ -86,7 +86,7 @@ function Nav(props) {
                                     }}>About</a>
                                 )}
                             </li>
-                            <li class="nav-item nav-link nav-item-styles">
+                            <li className="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'Portfolio' ? (
                                     <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#portfolio'>Portfolio</a></button>
                                 ) : (
@@ -96,7 +96,7 @@ function Nav(props) {
                                     }}>Portfolio</a>
                                 )}
                             </li>
-                            <li class="nav-item nav-link nav-item-styles">
+                            <li className="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'ContactForm' ? (
                                     <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#contact'>Contact</a></button>
                                 ) : (
@@ -106,7 +106,7 @@ function Nav(props) {
                                     }}>Contact</a>
                                 )}
                             </li>
-                            <li class="nav-item nav-link nav-item-styles">
+                            <li className="nav-item nav-link nav-item-styles">
                                 {currentComponent === 'Resume' ? (
                                     <button className='rounded' style={{ background: '#BEA368ff' }}><a href='#resume'>Resume</a></button>
                                 ) : (
