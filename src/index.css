@@ -82,11 +82,11 @@ p {
   margin-top: 0;
 }
 
-a {
+/* a {
   color: var(--tertiary);
   text-decoration: none;
   font-weight: bold;
-}
+} */
 
 a:hover {
   text-decoration: underline;
@@ -304,6 +304,17 @@ ul {
 
 }
 
+.contact-titles, .contact-info {
+  font-family: Montserrat, sans-serif;
+}
+
+p a {
+  color: #005f5b
+}
+
+p a:hover {
+  color: rgb(190, 163, 104)
+}
 
 /* ============ end custom classes ============ */
 
