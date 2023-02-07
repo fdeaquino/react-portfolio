@@ -1,5 +1,5 @@
 import React from 'react';
-import fdPhoto from "../../assets/small/fd-photo.jpg";
+import fdPhoto from "../../assets/large/fd-updated-photo.jpg";
 
 function About() {
     return (

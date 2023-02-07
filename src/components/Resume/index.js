@@ -6,7 +6,7 @@ function Resume() {
             <div className="container position-relative mb-4 mb-xl-5">
                 <div className="row d-flex justify-content-center">
                     <div className="col-md-8 col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center displayFlex" >
-                        <a href="https://drive.google.com/file/d/1JWUUa-NQSzl7hrgyowWW_6MVWMurbOZe/view?usp=sharing">
+                        <a href="https://drive.google.com/file/d/1QPbjb2h7Evd73rGj4KvNaRHht-ppn8K8/view?usp=sharing">
                             <button className="btn resumeBtn" type="button">Download Resume</button>
                         </a>
 

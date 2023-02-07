@@ -15,7 +15,10 @@ function Nav(props) {
     return (
         <header>
             <nav className="navbar navbar-expand-lg navbar-light bsNav">
-                <h1 className="navbar-brand aBrandStyles" href="#about">Fidel Deaquino</h1>
+                <h1 className="navbar-brand aBrandStyles"><a style={{ color: 'white' }} href='#about' onClick={() => {
+                                    setCurrentComponent('About')
+                                    props.setCurrentPage('About')
+                                }}>Fidel Deaquino</a></h1>
                 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
