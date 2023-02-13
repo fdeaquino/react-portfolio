@@ -51,8 +51,8 @@ function ContactForm() {
 
                     <div className="">
                         <div className='row d-flex justify-content-center'>
-                            <div className="d-flex flex-column justify-content-center align-items-start h-100 py-sm-5">
-                                <div className='card-body p-sm-5'>
+                            <div className="d-flex flex-column justify-content-center align-items-start h-100 py-sm-3">
+                                <div className='card-body'>
                                     <h2 className='text-center mb-4 h2-my-forms-title'>
                                         Get in touch with me
                                     </h2>
