@@ -47,7 +47,7 @@ function ContactForm() {
     return (
         <section>
             <section className='position-relative py-4 py-xl-5'>
-                <div className="container position-relative card">
+                <div className="container position-relative">
 
                     <div className="">
                         <div className='row d-flex justify-content-center'>
