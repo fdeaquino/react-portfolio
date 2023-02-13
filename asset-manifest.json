@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/react-portfolio/static/css/main.3cb689d9.css",
-    "main.js": "/react-portfolio/static/js/main.3399c7d0.js",
+    "main.js": "/react-portfolio/static/js/main.834e8dc9.js",
     "static/js/787.a2cb61a6.chunk.js": "/react-portfolio/static/js/787.a2cb61a6.chunk.js",
     "static/media/byte-farmers-market.png": "/react-portfolio/static/media/byte-farmers-market.92ba39caac16c5f06633.png",
     "static/media/runbuddy-updated.png": "/react-portfolio/static/media/runbuddy-updated.35458f7c2c2209db06f9.png",
@@ -12,11 +12,11 @@
     "static/media/fd-updated-photo.jpg": "/react-portfolio/static/media/fd-updated-photo.174abb90b1a5a22d7951.jpg",
     "index.html": "/react-portfolio/index.html",
     "main.3cb689d9.css.map": "/react-portfolio/static/css/main.3cb689d9.css.map",
-    "main.3399c7d0.js.map": "/react-portfolio/static/js/main.3399c7d0.js.map",
+    "main.834e8dc9.js.map": "/react-portfolio/static/js/main.834e8dc9.js.map",
     "787.a2cb61a6.chunk.js.map": "/react-portfolio/static/js/787.a2cb61a6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3cb689d9.css",
-    "static/js/main.3399c7d0.js"
+    "static/js/main.834e8dc9.js"
   ]
 }
